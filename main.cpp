@@ -58,8 +58,8 @@ int main()
        cout << " You search for gear to leave the plane with.\n";
     break;
 
-    case 'S':;
-       cout << " 
+    case 'S':; 
+       cout << " You start your search for supplies. Bodies or suitcases?\n; 
 
     break;
     }
