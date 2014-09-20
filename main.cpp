@@ -1,11 +1,21 @@
 #include <cstdlib>
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main()
 {
   string mystr;
+  char TorC;
+  char LorS;
+  char GorC;
+  char BorF;
+
+
+
+
+
   cout << "What's your name? ";
   getline (cin, mystr);
   cout << "Passanger 14c " << mystr << ".\n" << "Location unknown.\n" << "Date Unknown.\n";
@@ -16,26 +26,24 @@ int main()
           "  [T]ouch your hair\n"
           "  [C]heck your pockets\n";
 
-  char s;
-  cin >> s;
-
-  switch (toupper( s ))
+  cin >> TorC;
+  switch (toupper( TorC ))
     {
     case 'T':;
        cout << "\nIt's blood...\n";
        cout << " *You whipe the blood off hand onto neighboring seat*\n ";
        cout << " *You unbuckle your belt*\n ";
        cout << "You get up and look around the room\n";
-       cout << "By the light coming from the shattered windows,";
-       cout << " you count 17 bodies\n";
+       cout << "By the light coming from the hole in the roof and the shattered windows,";
+       cout << " you count 17 bodies on the ground\n";
     break;
 
     case 'C':;
        cout << "Your pockets are empty.\n";
        cout << " *You unbuckle your belt*\n ";
        cout << "You get up and look around the room\n";
-       cout << "By the light coming from the shattered windows,";
-       cout << " you count 17 bodies\n";
+       cout << "By the light coming from the hole in the roof and the shattered windows,";
+       cout << " you count 17 bodies on the ground\n";
 
     break;
     }
@@ -43,23 +51,38 @@ int main()
 
   cout << "Luggage scattered over the floor of the wrecked aircraft...."
           "where are the survivors?\n";
-  cout << " Decisions, decisions...\n"
+  cout << " What wpu;d you like to do\n"
           "   [L]ook out the shattered window\n"
           "   [S]earch the cabin\n";
 
-  char b;
-  cin >> b;
+  
+  cin >> LorS;
 
-  switch (toupper( b ))
+  switch (toupper(LorS))
     {
     case 'L':;
-       cout << " You look out the plane window and see heavy foilage all around.\n";
-       cout << " The creaking of the plane makes you uneasy.\n";
-       cout << " You search for gear to leave the plane with.\n";
+       cout << "" 
     break;
 
-    case 'S':; 
-       cout << " You start your search for supplies. Bodies or suitcases?\n; 
+    case 'S':;
+        cout << "What part of the cabin would you like to search\n";
+        cout << "[B]ack of the cabin\n"
+                "[F]ront of the cabin\n";
+                
+                cin >> BorF
+                switch (toupper(BorF))
+                {
+                  case 'B':;
+                    cout << "y";
+                  break;
+                  
+                  case 'F':;
+                    cout << "You find that the front of the cabin is under water\n";
+                    cout << "[C]ontinue searching the front\n"
+                            "[H]ead to the back of the plane\n";
+                  break;
+                  
+                }
 
     break;
     }
@@ -71,20 +94,20 @@ int main()
   cout << "What would you like to do?\n"
           "  [G]ive up\n"
           "  [C]arry on\n";
+        
+  
 
+  
+  cin >> GorC;
 
-
-  char c; //declare c to be of type char
-  cin >> c;
-
-  switch (toupper( c ))
+  switch (toupper( GorC ))
     {
     case 'G':;
-         cout << "Go back to sleep.";
+         cout << "Go back to sleep, and die peacfully in your sleep";
     break;
 
     case 'C':;
-         cout << "Brave one arent you?";
+         cout << "Pick your self up and carry on";
     break;
     }
 
