@@ -27,7 +27,7 @@ int main()
        cout << " *You unbuckle your belt*\n ";
        cout << "You get up and look around the room\n";
        cout << "By the light coming from the shattered windows,";
-       cout << " you count 17 dead\n";
+       cout << " you count 17 bodies\n";
     break;
 
     case 'C':;
@@ -35,7 +35,7 @@ int main()
        cout << " *You unbuckle your belt*\n ";
        cout << "You get up and look around the room\n";
        cout << "By the light coming from the shattered windows,";
-       cout << " you count 17 dead\n";
+       cout << " you count 17 bodies\n";
 
     break;
     }
@@ -53,15 +53,13 @@ int main()
   switch (toupper( b ))
     {
     case 'L':;
-       cout << " 
+       cout << " You look out the plane window and see heavy foilage all around.\n";
+       cout << " The creaking of the plane makes you uneasy.\n";
+       cout << " You search for gear to leave the plane with.\n";
     break;
 
     case 'S':;
-       cout << "Your pockets are empty.\n";
-       cout << " *You unbuckle your belt*\n ";
-       cout << "You get up and look around the room\n";
-       cout << "By the light coming from the shattered windows,";
-       cout << " you count 17 dead\n";
+       cout << " 
 
     break;
     }
@@ -73,8 +71,8 @@ int main()
   cout << "What would you like to do?\n"
           "  [G]ive up\n"
           "  [C]arry on\n";
-        
-  
+
+
 
   char c; //declare c to be of type char
   cin >> c;
